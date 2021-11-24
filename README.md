@@ -65,7 +65,7 @@ User receives a keycode / access token to the apartment after first payment. If 
 3. Greets to the Driver and see you soon!!
 
 
-## Functions to be implemented(In next phases)
+## Implementation Plan and Roadmap
 
 1. 
 
