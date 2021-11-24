@@ -11,8 +11,8 @@ const App = {
 
   start: async function() {
     const { web3 } = this;
-    this.CarRentalContractAddress = '0xfBD466BEe1CCd16032a2cabbd4fdB4Ce814FAb6a';
-    this.OchestraContractAdress = '0x9fEBe1728261150A1cbAb677e6a39214ec331DcF';
+    App.CarRentalContractAddress = '0xfBD466BEe1CCd16032a2cabbd4fdB4Ce814FAb6a';
+    App.OchestraContractAdress = '0x9fEBe1728261150A1cbAb677e6a39214ec331DcF';
     try {
       // get contract instance
       const networkId = await web3.eth.net.getId();
@@ -61,7 +61,7 @@ const App = {
          
           depositHelp.innerHTML = "The current rate is : " + result.data['amount'];
 
-          const balance = await web3.eth.getBalance(this.CarRentalContractAddress);
+          const balance = await web3.eth.getBalance(App.CarRentalContractAddress);
 
           const currentbalance = document.getElementById("currentdeposit");
           currentbalance.value = Web3.utils.fromWei(balance, 'ether')
