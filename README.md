@@ -42,12 +42,8 @@ https://thehardcoder05.github.io/blockchain-developer-bootcamp-final-project/
 
 ## Description
 
-User and apartment owner enter an agreement for renting a property, i.e. exchanging usage rights to an apartment for as long as payments are made to a specific Ethereum account before the agreed deadline.
+The Cars Renting Platform is a de-centralised,low-cost, and efficient marketing place to allow drivers to rent a car for their trips. The Dapp is rather quick and dirty on the UI frontend part, reason was I wanted to focus to make the Smart Contracts(Solidity) right in the first place. The key idea to leverage the beauty of Smart Contracts - "Turing Complete" to act as an Escrow to manage the the booking process. 
 
-User receives a keycode / access token to the apartment after first payment. If a user's payments are late, they will receive a reminder after one week. After e.g. 30 days (variable depending on local jurisdiction) of no payments, usage rights will be automatically transferred back to owner and apartment access rights will be revoked from user. User agrees to this procedure when entering contract with owner.
-
-- Checking for received payments and transferring ownership back to owner on non-payment cases could be scheduled with e.g. Gelato Network (https://docs.gelato.network/tutorial).
-- Opening door locks could be done with an app with smart locks, e.g. https://api.getkisi.com/docs. Smart lock APIs won't be explored in this project.
 
 ## Workflow
 ### Booking workflow
