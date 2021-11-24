@@ -69,7 +69,6 @@ User receives a keycode / access token to the apartment after first payment. If 
 
 1. 
 
-
 ## Directory structure
 
 - `client`: Project's React frontend.
