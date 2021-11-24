@@ -78,7 +78,7 @@ Certainly, this is definately not the ideal version. There are more services and
 
 ## Sensitive Information
 
-- .key file - Infura Gateway's Project Id
+- .key file - Infura Gateway - Project Id
 - .secret - MetaMask Mnemonic key
 
 
