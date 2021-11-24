@@ -65,7 +65,9 @@ Certainly, this is definately not the ideal version. There are more services and
 
 ## Implementation Plan and Roadmap
 
-1. 
+1. KYC Process
+2. Improve UI Frontend and User experience
+3. Oracelisation platform - ChainLink
 
 ## Directory structure
 
