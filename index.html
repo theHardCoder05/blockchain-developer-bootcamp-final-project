@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Car Rental Dapp</title>
+    <script src="bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+
+
+  </head>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+  </style>
+  <body>
+    <div class="container">
+    
+      <h1 class="display-1">Car Rental DApp</h1>
+      <h1 class="display-6"><i>Per day rate as low as 0.001 ether</i></h1>
+      <!-- <h1 class="display-4">Enjoy your journey!</h1> -->
+      <div class="row">
+        <div class="col-6">
+          <b><label for="name" >Car Model:</label></b>
+          <select class="form-control"  id="carId"  aria-label="Car Model Id">
+            <option selected value="">Pick a car </option>
+            <option value="1">MAZDA X5</option>
+            <option value="2">HONDA ACCORD</option>
+            <option value="3">TOYOTA CAMRY</option>
+          </select>
+          <b><label for="name" class="control-label">Driver Name:</label></b>
+          <input type="text" class="form-control" id="dname" required placeholder="ex: Jack Daniel"  >
+          <b><label for="name" class="control-label">Driver License ID:</label></b>
+          <input type="text" class="form-control" id="dlilcenseid" required placeholder="ex:A-98776-001"  >
+          <b><label for="rentdate" class="control-label" >To Date:</label></b>
+          <input type="date"  class="form-control" required id="rentdate" name="rentdate" onchange="App.setPrice(event);">
+          <b><label for="depositamount" class="control-label">Deposit  Amount:</label></b>
+          <label for="depositamount" id="pricerate"></label>
+          <small id="depositHelp" class="form-text text-muted">Amount in Ether</small>
+          <input type="number"  class="form-control" id="depositamount" readonly required name="depositamount" placeholder="ether">
+          <small id="depositHelp" class="form-text text-muted">Amount in USD</small>
+          <input type="number"  class="form-control" id="priceinusd" readonly required name="priceinusd" placeholder="usd">
+          
+          <br>
+          <button type="button"  onclick="App.reset()"  class="btn btn-secondary">Clear</button>
+          <button type="button" onclick="App.rentCar()" class="btn btn-warning">Book Me!</button>
+        </div>
+      
+     
+        <div class="col-6">
+          <b><label for="agent" class="control-label">Agent(Owner)- Smart Contract Address:</label></b>
+          <input type="text" class="form-control" id="agent" placeholder="address" readonly >
+          <b><label for="sender" class="control-label">Driver Address:</label></b>
+          <input type="text" class="form-control" id="driver" placeholder="address" readonly >
+          <b><label for="sender" class="control-label">Current Balance Deposit(Escrow):</label></b>
+          <input type="text" class="form-control" id="currentdeposit" readonly >
+        </div>
+    
+      </div>
+  <hr>
+  <div class="row">
+    <b><label for="name" class="control-label" >Drivers:</label></b>
+    <select class="form-control"  id="drivers"  aria-label="Drivers">
+
+    </select>
+    
+          <small id="depositHelp" class="form-text text-muted">Please enter the Driver's MetaMask address to withdraw.</small>
+      <input type="text" class="form-control" id="daddress" required placeholder="ex: 0xaf59f5B438b1b198e95c2b297DFad35050293a6B"  >
+      
+      <br>
+      <button type="button" onclick="App.withdraw()" class="btn btn-primary">Withdraw!</button>
+      
+    </div>
+  
+ 
+
+  </div>
+      </div>
+      
+      
+    </div>
+   
+  
+ 
+   
+  </body>
+</html>
