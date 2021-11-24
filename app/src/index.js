@@ -6,10 +6,13 @@ const App = {
   account: null,
   carSC: null,
   Ochestrator:null,
+  CarRentalContractAddress:null,
+  OchestraContractAdress:null,
 
   start: async function() {
     const { web3 } = this;
-
+    this.CarRentalContractAddress = '0xfBD466BEe1CCd16032a2cabbd4fdB4Ce814FAb6a';
+    this.OchestraContractAdress = '0x9fEBe1728261150A1cbAb677e6a39214ec331DcF';
     try {
       // get contract instance
       const networkId = await web3.eth.net.getId();
@@ -17,18 +20,18 @@ const App = {
       this.carSC = new web3.eth.Contract(
         carRentalArtifact.abi,
         //deployedNetwork && deployedNetwork.address,
-        '0xfBD466BEe1CCd16032a2cabbd4fdB4Ce814FAb6a',
+        this.CarRentalContractAddress,
       );
-      console.log("This is the deployed Smart Contract address - {0}", deployedNetwork.address);
+   
 
       // Ochestrator Contract
       const deployedNetworkProxy = OchestratorArtifact.networks[networkId];
       this.Ochestrator = new web3.eth.Contract(
         OchestratorArtifact.abi,
         //deployedNetwork && deployedNetwork.address,
-        '0x9fEBe1728261150A1cbAb677e6a39214ec331DcF',
+        this.OchestraContractAdress,
       );
-      console.log("This is the deployed Proxy Smart Contract address - {0}", deployedNetworkProxy.address);
+    
       // get accounts
       const accounts = await web3.eth.getAccounts();
       this.account = accounts[0];
@@ -47,12 +50,18 @@ const App = {
         const depositHelp = document.getElementById("pricerate");
         async function getPrice()
         {
-          const price = await fetch('https://api.coinbase.com/v2/prices/ETH-USD/buy');
+          const price = await fetch('https://api.coinbase.com/v2/prices/ETH-USD/buy', {
+            method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+            'API-Key': 'secret'
+          }
+          });
           const result = await price.json();
          
           depositHelp.innerHTML = "The current rate is : " + result.data['amount'];
 
-          const balance = await web3.eth.getBalance(deployedNetwork.address);
+          const balance = await web3.eth.getBalance(this.CarRentalContractAddress);
 
           const currentbalance = document.getElementById("currentdeposit");
           currentbalance.value = Web3.utils.fromWei(balance, 'ether')
