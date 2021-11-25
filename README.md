@@ -74,6 +74,7 @@ Certainly, this is definately not the ideal version. There are more services and
 3. Oracelisation platform - ChainLink
 4. Upgradeble Smart Contracts
 5. Multisig function on the Withdraw - Ideally, the withdraw function could potentially have multi-party to sign and withdraw. The scenario would be the car agent, authoritise(Police department), and Insurance company.
+6. User Consent
 
 ## Directory structure
 

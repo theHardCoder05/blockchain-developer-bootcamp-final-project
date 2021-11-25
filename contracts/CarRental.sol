@@ -157,7 +157,7 @@ contract CarRental is  Ownable, AccessControl, ReentrancyGuard, IRental, ICar {
       Modifier to check whether the Driver double booking
      */
     modifier canBook(address driver) {
-    require((Rentals[driver].state == RentalState.Vacant), "Double booking is not allowed..");
+    require((Rentals[driver].state == RentalState.Vacant), "Double booking is not allowed");
     
       _;
    }
