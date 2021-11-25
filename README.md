@@ -1,4 +1,4 @@
-# Final project - Decentralised Cars Renting Platform
+# Final project - Decentralised Cars Renting Platform (D-Rent)
 
 ## Deployed version url:
 
