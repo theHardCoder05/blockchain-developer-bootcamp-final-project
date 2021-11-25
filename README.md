@@ -68,6 +68,7 @@ Certainly, this is definately not the ideal version. There are more services and
 1. KYC Process
 2. Improve UI Frontend and User experience
 3. Oracelisation platform - ChainLink
+4. Upgradeble Smart Contracts
 
 ## Directory structure
 
@@ -80,5 +81,11 @@ Certainly, this is definately not the ideal version. There are more services and
 
 - .key file - Infura Gateway - Project Id
 - .secret - MetaMask Mnemonic key
+-  You do not need the key and secret to test on your local!!!
+
+## Sidenotes
+- Agent(Owner) is not allowed to book a car.
+- No double booking on the same driver. 
+- Only the Agent(Owner) can withdraw back the fund to driver.
 
 

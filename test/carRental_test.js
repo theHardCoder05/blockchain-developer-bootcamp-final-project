@@ -255,10 +255,10 @@ contract("Car Rental", function (accounts) {
      /*
      * To test make sure no same driver is double booking
      */
-      describe.skip("Use case - Rent a car double booking", () => {
+      describe("Use case - Rent a car double booking", () => {
         it("should rent a car with uid, render(address), datetime,", async () => {
           await instance.rentCar(uid, drivername, drivinglicenseid,  datetime, { from: bob, value: deposit });
-          await instance.rentCar(uid, drivername, drivinglicenseid,  datetime, { from: bob, value: deposit });
+          await catchRevert(instance.rentCar(uid, drivername, drivinglicenseid,  datetime, { from: bob, value: deposit }));
          
         });
     
