@@ -1,12 +1,13 @@
 Contract security measures
 SWC-103 (Floating pragma)
-Specific compiler pragma 0.8.0 used in contracts to avoid accidental bug inclusion through outdated compiler versions.
+Specific compiler pragma 0.8.3 used in the final project.
 
 SWC-105 (Unprotected Ether Withdrawal)
-withdraw is protected with OpenZeppelin Ownable's onlyOwner modifier.
+- The Withdraw is protected with OpenZeppelin Ownable's onlyOwner modifier with other modifiers such as nonReentrant.
+- The custom modifier IsRefundable is to ensure the existance of the driver.
 
 SWC-104 (Unchecked Call Return Value)
-The return value from a call to the owner's address in addAsTenant is checked with require to ensure transaction rollback if call fails.
+- The Withdraw payanel shall return a boolean value to determine the withdraw  status, whether is succeed or failed. 
 
 Modifiers used only for validation
 All modifiers in contract(s) only validate data with require statements.
