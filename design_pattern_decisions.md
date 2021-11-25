@@ -1,5 +1,6 @@
 Design patterns used
 Access Control Design Patterns
-Ownable design pattern used in three functions: removeTenant(), withdraw() and addProperty(). These functions do not need to be used by anyone else apart from the contract creator, i.e. the party that is responsible for managing the rental operations.
+Ownable design pattern used in three functions:  Withdraw() and addCar(). The key idea is ONLY the Owner can perform the withdraw or refund the deposit back to the driver. Ideally, the addCar function should defer to an address(operator) who has the "Operator" Role.
 Inheritance and Interfaces
-Rentals contract inherits the OpenZeppelin Ownable contract to enable ownership for one managing user/party.
+- Import Openzepplin Smart Contracts for all kind of security best pratices and folllowing the guidelione.
+- Created custom intfaces to implement interface design pattern (SOLID) principle.
