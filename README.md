@@ -21,6 +21,10 @@ https://thehardcoder05.github.io/blockchain-developer-bootcamp-final-project/
 - `truffle console --network development`
 - Run tests in Truffle console: `truffle test`
 - `development` network id is 1337, remember to change it in Metamask as well!
+- Your local Ganache should be configured as the setting below
+ - endpoint: http://127.0.0.1 or http://localhost
+ - port: 8545
+ - networkid: 1337
 
 ### Frontend
 
