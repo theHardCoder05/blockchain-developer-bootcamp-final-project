@@ -38,7 +38,7 @@ https://drive.google.com/file/d/1B-mevsCnvhG61-DBYzhjdMNEkPvgtbBW/view?usp=shari
 
 ## Public Ethereum wallet for certification:
 
-`0xA7D88AB5987b7837d9C6aE2A07f5df4575a502EB`
+`0xA7D88AB5987b7837d9C6aE2A07f5df4575a502EB` - For the NFT
 
 ## Description
 
@@ -69,6 +69,7 @@ Certainly, this is definately not the ideal version. There are more services and
 2. Improve UI Frontend and User experience
 3. Oracelisation platform - ChainLink
 4. Upgradeble Smart Contracts
+5. Multisig function on the Withdraw - Ideally, the withdraw function could potentially have multi-party to sign and withdraw. The scenario would be the car agent, authoritise(Police department), and Insurance company.
 
 ## Directory structure
 
