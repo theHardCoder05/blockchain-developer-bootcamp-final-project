@@ -11,6 +11,12 @@ SWC-104 (Unchecked Call Return Value)
 
 Modifiers used only for validation
 All modifiers in contract(s) only validate data with require statements.
+There are some custom modifiers to ensure the data and process are legitimate. 
+- PaidEnough - Ensure Driver has sufficient fund
+- IsRefundable - Ensure the existance of the driver
+- isNotOnwner - Owner is not allowed booking
+- canBook - No double booking is allowed. (Proposal enhancement in future  will allow to have multiple booking)
+
 
 Pull over push
 All functions that modify state are based on receiving calls rather than making contract calls.
