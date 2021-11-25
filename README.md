@@ -4,7 +4,7 @@
 
 https://thehardcoder05.github.io/blockchain-developer-bootcamp-final-project/
 
-## How to run this project locally:
+## Steps to run the project:
 
 ### Prerequisites
 
