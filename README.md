@@ -2,7 +2,7 @@
 
 ## Deployed version url:
 
-https://thehardcoder05.github.io/dappPracticeWebpack/
+https://thehardcoder05.github.io/blockchain-developer-bootcamp-final-project/
 
 ## How to run this project locally:
 
@@ -31,9 +31,9 @@ https://thehardcoder05.github.io/dappPracticeWebpack/
 - Open `http://localhost:8080`
 
 
-## Screencast link
+## Recording
 
-
+https://drive.google.com/file/d/1B-mevsCnvhG61-DBYzhjdMNEkPvgtbBW/view?usp=sharing
 
 
 ## Public Ethereum wallet for certification:
@@ -42,12 +42,10 @@ https://thehardcoder05.github.io/dappPracticeWebpack/
 
 ## Description
 
-User and apartment owner enter an agreement for renting a property, i.e. exchanging usage rights to an apartment for as long as payments are made to a specific Ethereum account before the agreed deadline.
+The Cars Renting Platform is a De-centralised,Low-Cost,Transparent,Trustworthy, and Efficient marketing place to allow drivers to rent a car for their trips. The Dapp is rather quick and dirty on the UI frontend part, reason was I wanted to focus to make the Smart Contracts(Solidity) right in the first place. The key idea to leverage the beauty of Smart Contracts - "Turing Complete" to act as an Escrow to manage the the booking process. Driver to visits the Dapp website to pick the desired car follow-by filling up the Personal Driving Identify such as the Driving License Id; The renting rate is go by per day basis, as low as 0.001 ether. If you days * 0.001 = total amount. 
+The Withdraw will happen when the driver returns back the car to the depot. Agent to perform a thourough check to ensure no traffic rules violation or any car damaage, agent shall re-fund back the 70% of the deposit to the driver. The 30% it will remain in the Smart Contract for the operation costs. 
+Certainly, this is definately not the ideal version. There are more services and components to be built for the MVP version such as KYC, ChainLink Intergration, Data Security Compliance features, Cloud Security features, and etc. 
 
-User receives a keycode / access token to the apartment after first payment. If a user's payments are late, they will receive a reminder after one week. After e.g. 30 days (variable depending on local jurisdiction) of no payments, usage rights will be automatically transferred back to owner and apartment access rights will be revoked from user. User agrees to this procedure when entering contract with owner.
-
-- Checking for received payments and transferring ownership back to owner on non-payment cases could be scheduled with e.g. Gelato Network (https://docs.gelato.network/tutorial).
-- Opening door locks could be done with an app with smart locks, e.g. https://api.getkisi.com/docs. Smart lock APIs won't be explored in this project.
 
 ## Workflow
 ### Booking workflow
@@ -65,10 +63,11 @@ User receives a keycode / access token to the apartment after first payment. If 
 3. Greets to the Driver and see you soon!!
 
 
-## Functions to be implemented(In next phases)
+## Implementation Plan and Roadmap
 
-1. 
-
+1. KYC Process
+2. Improve UI Frontend and User experience
+3. Oracelisation platform - ChainLink
 
 ## Directory structure
 
@@ -79,7 +78,7 @@ User receives a keycode / access token to the apartment after first payment. If 
 
 ## Sensitive Information
 
-- .key file - Infura Gateway's Project Id
+- .key file - Infura Gateway - Project Id
 - .secret - MetaMask Mnemonic key
 
 
