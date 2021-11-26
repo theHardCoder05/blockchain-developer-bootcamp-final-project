@@ -17,6 +17,7 @@ https://thehardcoder05.github.io/blockchain-developer-bootcamp-final-project/
 
 - Run `npm install` in project root to install Truffle build and smart contract dependencies
 - Run local testnet in port `8545` with an Ethereum client, e.g. Ganache
+- `truffle compile` - To build Smart Contracts artifacts
 - `truffle migrate --network development`
 - `truffle console --network development`
 - Run tests in Truffle console: `truffle test`
