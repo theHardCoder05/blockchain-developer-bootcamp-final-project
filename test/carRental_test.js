@@ -312,4 +312,17 @@ contract("Car Rental", function (accounts) {
           });
       
         });
+
+
+        // Test the fallback funtion
+        describe("Use case - To test fallback function", () => {
+            it("should reject sending ether directly to the contract.", async () => {
+              
+              await catchRevert(
+                instance.sendTransaction(
+                  { from: bob, value: 1 }
+                )
+              );
+            });
+          });
   });
