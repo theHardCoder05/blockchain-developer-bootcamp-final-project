@@ -96,4 +96,7 @@ Certainly, this is definately not the ideal version. There are more services and
 - No double booking on the same driver. 
 - Only the Agent(Owner) can withdraw back the fund to driver.
 
+## For Live Testing - Consensys bootcamp students
+- Please ping me on Discord for withdrawing upon renting!!!!!!!!
+
 
