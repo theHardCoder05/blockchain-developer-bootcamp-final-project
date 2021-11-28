@@ -38,7 +38,7 @@ https://thehardcoder05.github.io/blockchain-developer-bootcamp-final-project/
 
 ## Recording
 
-https://drive.google.com/file/d/1B-mevsCnvhG61-DBYzhjdMNEkPvgtbBW/view?usp=sharing
+https://www.youtube.com/watch?v=SPGKyMFsaqM
 
 
 ## Public Ethereum wallet for certification:
