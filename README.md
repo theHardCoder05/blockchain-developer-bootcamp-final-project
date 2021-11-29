@@ -65,7 +65,7 @@ Certainly, this is definately not the ideal version. There are more services and
 ### Withdraw workflow
 1. Agent to withdraw or refund back the Driver if and only if the Driver didn't violate traffic rules or met any accident.
 2. The Withdraw amount should be the 70% of the total amount of the deposit; 30% is the renting fee charge. 
-3. Greets to the Driver and see you soon!!
+
 
 
 ## Implementation Plan and Roadmap
